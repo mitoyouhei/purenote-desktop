@@ -1,18 +1,18 @@
 {
   "$schema": "https://schema.tauri.app/config/2.0.0-rc",
-  "productName": "purenote-webapppurenote-desktop",
+  "productName": "Purenote Desktop",
   "version": "0.1.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "com.purenote.desktop",
   "build": {
-    "frontendDist": "../build../build",
-    "devUrl": "http://localhost:3000http://localhost:3000",
-    "beforeDevCommand": "npm run devnpm start",
-    "beforeBuildCommand": "npm run buildnpm run build"
+    "frontendDist": "../build",
+    "devUrl": "http://localhost:3000",
+    "beforeDevCommand": "npm start",
+    "beforeBuildCommand": "npm run build"
   },
   "app": {
     "windows": [
       {
-        "title": "purenote-webappPurenote Desktop",
+        "title": "Purenote Desktop",
         "width": 800,
         "height": 600,
         "resizable": true,
