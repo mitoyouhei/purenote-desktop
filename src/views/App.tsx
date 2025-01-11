@@ -4,6 +4,7 @@ import SystemInfo from "../components/SystemInfo";
 import ErrorToast from "../components/ErrorToast";
 import AppRoutes from "./AppRoutes";
 import Spinner from "../components/Spinner";
+import TitleBar from "../components/TitleBar";
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
 
@@ -27,9 +28,12 @@ const App = () => {
   if (!initializedUserSession) return <Spinner />;
   return (
     <>
-      <AppRoutes />
-      <SystemInfo />
-      <ErrorToast />
+      <TitleBar />
+      <div style={{ marginTop: '30px' }}>
+        <AppRoutes />
+        <SystemInfo />
+        <ErrorToast />
+      </div>
     </>
   );
 };
